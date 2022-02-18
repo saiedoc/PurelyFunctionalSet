@@ -7,6 +7,8 @@ import java.util.function.Function;
 
 public class Main {
 
+    //Basic Functions On Set
+	
     public static<T>PurelyFunctionalSet<T> empty() {
 	    PurelyFunctionalSet<T> emptySet = (T element) -> false;
         return emptySet;
@@ -36,7 +38,9 @@ public class Main {
         PurelyFunctionalSet<T> filteredSet = (T element) -> s.contains(element) && p.test(element);
         return filteredSet;
     }
-
+    
+   //Queries and Transformations on Sets
+	
     public static boolean forallImplement(PurelyFunctionalSet<Integer> s, Predicate<Integer> p , Integer element){
         if (element == 1001)
             return true;
