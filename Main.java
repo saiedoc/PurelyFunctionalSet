@@ -87,7 +87,6 @@ public class Main {
         PurelyFunctionalSet<Integer> unionSet2 = union(unionSet1,singletonSet3);
         Function<Integer, Integer> function = (element) -> Math.toIntExact(Math.round(Math.pow(element, 2))); ;
         PurelyFunctionalSet<Integer> mappedSet = map(unionSet2,function);
-        System.out.println(mappedSet.contains(2));
 
     }
 }
